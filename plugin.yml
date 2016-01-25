@@ -1,0 +1,40 @@
+name: Core
+author: Unionjackjz1
+version: 1.0.0
+description: Core Plugin | Does the main commands for the server!
+main: com.unionjackjz1.main.Main
+permissions:
+ core.tp:
+   default: true
+ core.gamemode:
+   default: op
+ core.notify:
+   default: op
+ core.heal:
+   default: op
+ core.heal.others:
+   default: op
+commands:
+ tp:
+  description: /tp | Teleport to another player
+  aliases: [teleport]
+ gmc:
+    description: /gmc | Creative Mode
+    usage: /gmc 
+ gms:
+    description: /gms | Survival Mode
+    usage: /gms
+ gma:
+    description: /gma | Adventure Mode
+    usage: /gma
+ gamemode:
+    description: /gamemode <mode> | Switch between gamemodes
+    usage: /gamemode <mode>
+    aliases: [gm]
+ heal:
+    description: /heal | Set your hunger/hearts to max
+    usage: /heal
+ feed:
+    description: /feed | Set your hunger to max
+    usage: /gamemode <mode>
+    aliases: [eat]
