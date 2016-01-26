@@ -24,13 +24,15 @@ public class Main extends JavaPlugin {
 			Bukkit.getServer().getLogger().info("Loading Core...");
 			Bukkit.getServer().getLogger().info("Core successfully loaded.");
 
-			getCommand("tp").setExecutor(new Commands());
-			getCommand("gmc").setExecutor(new Commands());
-			getCommand("gms").setExecutor(new Commands());
-			getCommand("gma").setExecutor(new Commands());
-			getCommand("gamemode").setExecutor(new Commands());
-			getCommand("heal").setExecutor(new Commands());
-			getCommand("feed").setExecutor(new Commands());
+			getCommand("tp").setExecutor(new Teleport());
+			
+			getCommand("gmc").setExecutor(new Gamemode());
+			getCommand("gms").setExecutor(new Gamemode());
+			getCommand("gma").setExecutor(new Gamemode());
+			getCommand("gamemode").setExecutor(new Gamemode());
+			
+			getCommand("heal").setExecutor(new Teleport());
+			getCommand("feed").setExecutor(new Teleport());
 		}
 
 		public void onDisable() {
